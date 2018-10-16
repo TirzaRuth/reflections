@@ -19,8 +19,14 @@ Branches would help me makes experimental changes to code that i dont want in th
 
 How do the diagrams help you visualize the branch structure?
 
+make it easier to understand the logic 
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+merges the entire commit history for both branches
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+alot more seamless. 
