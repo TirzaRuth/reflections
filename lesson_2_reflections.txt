@@ -1,32 +1,36 @@
-What happens when you initialize a repository? Why do you need to do it?
+What happens when you initialize a repository? 
+	A hidden folder .git is created which contains the entire commit history for the files in the working directory. 
 
-You need to initialize a repo when you assign a directory as being part of a traacked set of documents. 
+How is the staging area different from the working directory and the repository? 
+	The staging area is a temporary location for files that are added there from the working directory and before they are committed to the repository. 
+	This is useful because it allows you to commit files in sets that are logically similar instead of committing them all at once. 
 
-How is the staging area different from the working directory and the repository?
-What value do you think it offers?
+How can you use the staging area to make sure you have one commit per logical change?
+	The staging area allows you to add all the files that should be a part of the same logical change and then commit those files alone instead of the entire file set.
 
-Staging area is a temporary location for files to sit before they are commited and placed in repository
-
-How can you use the staging area to make sure you have one commit per logical
-change?
-
-Add files to staging area corresponding with one logical change at a time. 
-
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
-
-Branches would help me makes experimental changes to code that i dont want in the working version. 
+What are some situations when branches would be helpful in keeping your history organized? 
+	Branches allow you to make experimental changes to your code without affecting the master branch or main branch. 
 
 How do the diagrams help you visualize the branch structure?
+     	Branches help you to see where along the commit tree the different branches occur and what the parents of each branch are. 
 
-make it easier to understand the logic 
+What is the result of merging two branches together? 
+	You will get one branch with the changes from both the branches incorporated. 
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	It is a time saving mechanism and more efficient as well as less prone to error.  
 
-merges the entire commit history for both branches
+Commands:
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
-manually?
-
-alot more seamless. 
+git add  |    Add a file to the staging area
+git commit  |    Commit the files from the staging area to the repository 
+git status  |    Show which files are in the staging area, and which files from the working directory are not part of the repository    
+git diff  |    Git diff without arguments is comparing the working directory with the staging area
+git diff --staged  |    Compare the staging area with the repository
+git reset --hard  |    Undo all changes! There is no rollback for this, so be carefull!
+git checkout master  |    Restore the "Head" to the latest check-in 
+git log --graph --oneline <branch1> <branch2>  |    Show a visual representation of the commit history within different branches
+git checkout -b new_branch_name  |    Creates a new branch and do a checkout on this branch in one call instead of git branch new_branch_name and git checkout new_branch_name
+git merge branch1 branch2  |    Merge two branches, branch2 get merged into branch1
+git branch -d name  |    Remove the branch with the specified name
+git show commitId  |    Show the changes made in this commit compared to the previous version. This is working even after merging. 
