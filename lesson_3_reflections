@@ -7,7 +7,8 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    This is because you might be working on changes locally on the working directory and if someone else makes a change on the Github file, if the remote repository
+    is automatically updating the Git repository, your local changes could be overrode. 
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
