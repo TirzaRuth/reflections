@@ -20,14 +20,14 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    You can be up-to-date with any collaborations done on the remote while you are offline. 
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    You could collaborate on google docs, or subversion if you needed to collaborate on coding projects. Git seems easier than SVN. 
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    If you are modifying code and need feedback on the changed code before merging, this would be a good reason to use a separate branch.
